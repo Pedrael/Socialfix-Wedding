@@ -1,0 +1,27 @@
+.wedid {
+  z-index: 2;
+  position: relative;
+  .container {
+    @include width(1436);
+    background: white;
+    box-shadow: 0px 39px 73px rgba(1, 51, 72, 0.23);
+    border-radius: 8px;
+    padding: RelativeUnits(60, 0.5);
+    margin-top: RelativeUnits(-225, 1);
+    .title, .elements {
+      width: 100%;
+    }
+    .title {
+      @include width(455);
+      margin-bottom: RelativeUnits(75, 0.8);
+    }
+    .elements {
+      .item {
+        width: 20%;
+        h3 {
+          margin-bottom: RelativeUnits(40, 1);
+        }
+      }
+    }
+  }
+}

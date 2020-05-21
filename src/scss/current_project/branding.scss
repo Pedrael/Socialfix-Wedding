@@ -1,0 +1,25 @@
+.branding {
+  .title {
+    @include width(1300);
+    margin-top: RelativeUnits(190, 1);
+    margin-bottom: 20px;
+  }
+  .image-wrap {
+    @include width(1160);
+    margin-bottom: 20px;
+  }
+  @include _phone-big {
+    .title, .image-wrap {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-wrap {
+      margin-bottom: 0;
+      &:nth-child(odd) {
+        margin-top: -80px;
+      }
+    }
+  }
+}
