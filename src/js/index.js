@@ -1,12 +1,17 @@
-import jQuery from 'jquery';
-import Header from './header.js';
-import Carousel from './carousel.js';
-//import MyTimeIsNow from './date.js';
-//import Mail from './mail.js';
-import Ripple from './ripple.js';
+import 'owl.carousel';
+import Head from './head.js';
 
-Header();
-Carousel();
-//Mail();
-//MyTimeIsNow("date-input");
-Ripple();
+Head();
+
+$(document).ready(function(){
+  $('#website-carousel').owlCarousel({
+    loop: true,
+    items: 1,
+    dotsContainer: '#website-dots'
+  });
+  $('#wedid-carousel').owlCarousel({
+    loop: true,
+    items: 1,
+    dotsContainer: '#wedid-dots'
+  });
+});

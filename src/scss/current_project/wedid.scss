@@ -23,5 +23,35 @@
         }
       }
     }
+    @include _tablet-big {
+      .title {
+        width: 100%;
+        text-align: center;
+      }
+      .elements {
+        flex-wrap: wrap;
+        .item {
+          width: 45%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    @include _phone-big {
+      width: 100%;
+      border-radius: 16px;
+      padding: RelativeUnits(60, 0.5) 0;
+      padding-bottom: 60px;
+      .elements {
+        .item-duplet {
+          width: 100vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .item { width: 90%; text-align: center; }
+        }
+        margin-bottom: 20px;
+      }
+    }
   }
 }

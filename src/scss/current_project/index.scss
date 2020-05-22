@@ -1,8 +1,14 @@
 @import "_colors.scss";
 @import "_fonts.scss";
+@import 'node_modules/owl.carousel/src/scss/owl.carousel.scss';
 
 @import "test.scss";
 @import "teaser.scss";
 @import "wedid.scss";
 @import "branding.scss";
 @import "fontsfonts.scss";
+@import "website.scss";
+///HEADER, FOOTER, SPARE FOR ALL
+@import "base.scss";
+@import "head.scss";
+@import "foot.scss";

@@ -1,0 +1,35 @@
+.website {
+  margin-top: RelativeUnits(100, 1);
+  margin-bottom: RelativeUnits(100, 0.5);
+  .title {
+    @include width(1400);
+    margin-bottom: 20px;
+  }
+  .images {
+    .img-wrap {
+      width: calc(50% + #{RelativeUnits(100, 1)});
+    }
+    .first {
+      z-index: 2;
+    }
+    .second {
+      z-index: 1;
+      margin-left: RelativeUnits(-237, 1);
+      margin-top: RelativeUnits(-150, 1);
+    }
+  }
+  @include _phone-big {
+    .title {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+    .images {
+      width: 100vw;
+      .first, .second {
+        margin: 0;
+        width: 100vw;
+      }
+    }
+  }
+}

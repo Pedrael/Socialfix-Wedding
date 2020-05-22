@@ -1,9 +1,13 @@
 $mont: "Montserrat", sans-serif;
 
-html, body {
+html{
 	    font-family: $mont;
 			overflow-x: hidden;
 			width: 100vw;
+
+			body {
+				min-width: 320px;
+			}
 
 			a {
 				text-decoration: none;
@@ -29,15 +33,30 @@ html, body {
 				font-weight: 700;
       }
 }
+.slider-buttons {
+	display: flex;
+	justify-content: center;
+	.s-button {
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		border: 2px solid black;
+		margin: 0 3px;
+	}
+	.selected, .active {
+		background: black;
+		width: 31px;
+	}
+}
 .desktop {
-	display: block;
+	display: flex !important;
 	@include _phone-big {
-		display: none;
+		display: none !important;
 	}
 }
 .mobile {
-	display: none;
+	display: none !important;
 	@include _phone-big {
-		display: block;
+		display: flex !important;
 	}
 }
