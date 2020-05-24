@@ -7,10 +7,11 @@
   }
   .images {
     .img-wrap {
-      width: calc(50% + #{RelativeUnits(100, 1)});
+      min-width: calc(50% + #{RelativeUnits(180, 1)});
     }
     .first {
       z-index: 2;
+      margin-left: RelativeUnits(-60, 1);
     }
     .second {
       z-index: 1;
