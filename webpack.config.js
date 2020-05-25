@@ -27,7 +27,7 @@ module.exports = {
     './src/scss/main.scss'
   ],
   output: {
-    filename: './js/bundle.js'
+    filename: './js/wedding/bundle.js'
   },
   devtool: "source-map",
   module: {
@@ -71,7 +71,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: './css/style.bundle.css',
+      filename: './css/wedding/style.bundle.css',
       allChunks: true,
     }),
     new webpack.ProvidePlugin({
@@ -81,15 +81,15 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{
         from: './src/fonts',
-        to: './fonts'
+        to: './fonts/wedding'
       },
       {
         from: './src/favicon',
-        to: './favicon'
+        to: './favicon/wedding'
       },
       {
         from: './src/img',
-        to: './img'
+        to: './img/wedding'
       }
     ]),
   ].concat(htmlPlugins),
