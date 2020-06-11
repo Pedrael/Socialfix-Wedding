@@ -28,11 +28,22 @@ html{
         @include FontLineSize(0.45, 0.45, 0.1, 93, 24);
 				font-weight: 700;
       }
-      h3 {
+      h3:not(.tit) {
         @include FontLineSize(0.3, 0.3, 0.4, 36, 8);
 				font-weight: 700;
       }
 }
+
+.tab-nav, .part-add {
+	a {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+.about{ .logo { img{ width: auto; }}}
+.nav{ .logo { img{ width: auto; }}}
+
 .slider-buttons {
 	display: flex;
 	justify-content: center;
